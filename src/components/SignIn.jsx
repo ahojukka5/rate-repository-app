@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const SignIn = ({ onSubmit }) => {
+const SignInForm = ({ onSubmit }) => {
   return (
     <View style={styles.login}>
       <TextInput name="username" placeholder="Username" />
