@@ -1,5 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableWithoutFeedback,
+  View,
+} from 'react-native';
 import Constants from 'expo-constants';
 import { Link } from 'react-router-native';
 
@@ -25,12 +31,14 @@ const AppBar = () => {
   return (
     <TouchableWithoutFeedback>
       <View style={styles.container}>
-        <Link to="/signin">
-          <Text style={styles.text}>Sign in</Text>
-        </Link>
-        <Link to="/">
-          <Text style={styles.text}>Repositories</Text>
-        </Link>
+        <ScrollView horizontal>
+          <Link to="/signin">
+            <Text style={styles.text}>Sign in</Text>
+          </Link>
+          <Link to="/">
+            <Text style={styles.text}>Repositories</Text>
+          </Link>
+        </ScrollView>
       </View>
     </TouchableWithoutFeedback>
   );
