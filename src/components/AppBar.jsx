@@ -6,8 +6,9 @@ import theme from '../theme';
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: Constants.statusBarHeight,
-    paddingLeft: 15,
+    marginTop: Constants.statusBarHeight,
+    paddingTop: 20,
+    paddingLeft: 20,
     paddingBottom: 20,
     backgroundColor: theme.colors.dark,
   },
