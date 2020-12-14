@@ -14,6 +14,10 @@ const styles = StyleSheet.create({
 });
 
 const Main = () => {
+  const onSubmit = (values) => {
+    console.log(values);
+  };
+
   return (
     <View style={styles.container}>
       <AppBar />
@@ -22,7 +26,7 @@ const Main = () => {
           <RepositoryList />
         </Route>
         <Route path="/signin" exact>
-          <SignIn />
+          <SignIn onSubmit={onSubmit} />
         </Route>
         <Redirect to="/" />
       </Switch>
