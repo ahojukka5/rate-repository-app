@@ -36,6 +36,10 @@ const styles = StyleSheet.create({
     margin: 1,
     borderRadius: 7,
   },
+  paragraph: {
+    paddingTop: 2,
+    paddingBottom: 2,
+  }
 });
 
 const Text = ({
@@ -46,6 +50,7 @@ const Text = ({
   label,
   title,
   subtitle,
+  paragraph,
   style,
   ...props
 }) => {
@@ -59,6 +64,7 @@ const Text = ({
     title && styles.fontSizeHeading,
     subtitle && styles.fontSizeSubheading,
     label && styles.label,
+    paragraph && styles.paragraph,
     style,
   ];
 
