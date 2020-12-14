@@ -1,13 +1,16 @@
 import React from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
+import Text from './Text';
 
 const styles = StyleSheet.create({
   // Main container
   container: {
-    padding: 18,
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingTop: 15,
+    paddingBottom: 5,
     display: 'flex',
     flexDirection: 'column',
-    // backgroundColor: 'green',
   },
 
   // Top part of card, having avatar and information
@@ -15,7 +18,6 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: 'green',
   },
   tinyLogo: {
     marginRight: 10,
@@ -27,6 +29,10 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     flexShrink: 1,
   },
+  languages: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
 
   // Bottom part of card, having statistics
   cardBottom: {
@@ -35,7 +41,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',
-    backgroundColor: 'yellow',
   },
 
   statisticsBlock: {
@@ -53,7 +58,7 @@ const Statistic = ({ count, what }) => {
   };
   return (
     <View style={styles.statisticsBlock}>
-      <Text>{formatNumber(count)}</Text>
+      <Text bold>{formatNumber(count)}</Text>
       <Text>{what}</Text>
     </View>
   );
@@ -65,9 +70,13 @@ const RepositoryItem = ({ item }) => {
       <View style={styles.cardTop}>
         <Image style={styles.tinyLogo} source={{ uri: item.ownerAvatarUrl }} />
         <View style={styles.infoBlock}>
-          <Text>{item.fullName}</Text>
+          <Text bold subtitle>
+            {item.fullName}
+          </Text>
           <Text>{item.description}</Text>
-          <Text>{item.language}</Text>
+          <View style={styles.languages}>
+            <Text label>{item.language}</Text>
+          </View>
         </View>
       </View>
       <View style={styles.cardBottom}>
