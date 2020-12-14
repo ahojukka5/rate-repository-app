@@ -3,8 +3,10 @@ const theme = {
     textPrimary: '#24292e',
     textSecondary: '#586069',
     primary: '#0366d6',
-    dark: '#222222',
-    light: '#eeeeee',
+    blue: '#0965d2',
+    gray: '#e1e5e8',
+    dark: '#25292c',
+    light: '#f5f9fa',
     white: '#ffffff'
   },
   fontSizes: {
