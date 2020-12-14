@@ -1,9 +1,10 @@
 import React from 'react';
 import { TouchableWithoutFeedback, StyleSheet, View } from 'react-native';
+import { Formik } from 'formik';
 
 import theme from '../theme';
 import Text from './Text';
-import TextInput from './TextInput';
+import TextInput from './FormikTextInput';
 
 const styles = StyleSheet.create({
   login: {
@@ -34,6 +35,23 @@ const SignInForm = ({ onSubmit }) => {
         <Text style={styles.button}>Sign in</Text>
       </TouchableWithoutFeedback>
     </View>
+  );
+};
+
+const SignIn = () => {
+  const onSubmit = (values) => {
+    alert(`logging in with username ${values.username} and password ********`);
+  };
+
+  const initialValues = {
+    username: '',
+    password: '',
+  };
+
+  return (
+    <Formik initialValues={initialValues} onSubmit={onSubmit}>
+      {({ handleSubmit }) => <SignInForm onSubmit={handleSubmit} />}
+    </Formik>
   );
 };
 
