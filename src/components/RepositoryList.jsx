@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FlatList, View, StyleSheet } from 'react-native';
 
-import { apiBaseUrl } from '../constants';
+import useRepositories from '../hooks/useRepositories';
 import theme from '../theme';
 import RepositoryItem from './RepositoryItem';
 
@@ -13,28 +13,6 @@ const styles = StyleSheet.create({
 });
 
 const ItemSeparator = () => <View style={styles.separator} />;
-
-const useRepositories = () => {
-  const [repositories, setRepositories] = useState();
-  const [loading, setLoading] = useState(false);
-
-  const fetchRepositories = async () => {
-    setLoading(true);
-
-    const uri = `${apiBaseUrl}/repositories`;
-    const response = await fetch(uri);
-    const json = await response.json();
-
-    setLoading(false);
-    setRepositories(json);
-  };
-
-  useEffect(() => {
-    fetchRepositories();
-  }, []);
-
-  return { repositories, loading, refetch: fetchRepositories };
-};
 
 const RepositoryList = () => {
   const { repositories } = useRepositories();
