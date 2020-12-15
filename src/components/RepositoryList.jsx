@@ -16,15 +16,16 @@ const ItemSeparator = () => <View style={styles.separator} />;
 
 const useRepositories = () => {
   const [repositories, setRepositories] = useState();
+  const [loading, setLoading] = useState(false);
 
   const fetchRepositories = async () => {
-    // Replace the IP address part with your own IP address!
+    setLoading(true);
+
     const uri = `${apiBaseUrl}/repositories`;
     const response = await fetch(uri);
     const json = await response.json();
 
-    console.log(json);
-
+    setLoading(false);
     setRepositories(json);
   };
 
@@ -32,20 +33,20 @@ const useRepositories = () => {
     fetchRepositories();
   }, []);
 
+  return { repositories, loading, refetch: fetchRepositories };
+};
+
+const RepositoryList = () => {
+  const { repositories } = useRepositories();
+
   // Get the nodes from the edges array
   const repositoryNodes = repositories
     ? repositories.edges.map((edge) => edge.node)
     : [];
 
-  return repositoryNodes;
-};
-
-const RepositoryList = () => {
-  const repositories = useRepositories();
-
   return (
     <FlatList
-      data={repositories}
+      data={repositoryNodes}
       ItemSeparatorComponent={ItemSeparator}
       renderItem={({ item }) => <RepositoryItem key={item.id} item={item} />}
     />
