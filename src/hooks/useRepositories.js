@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { apiBaseUrl } from '../constants';
+import config from '../constants';
 
 const useRepositories = () => {
   const [repositories, setRepositories] = useState();
@@ -9,7 +9,7 @@ const useRepositories = () => {
   const fetchRepositories = async () => {
     setLoading(true);
 
-    const uri = `${apiBaseUrl}/repositories`;
+    const uri = `${config.apiBaseUrl}/repositories`;
     const response = await fetch(uri);
     const json = await response.json();
 
