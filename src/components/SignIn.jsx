@@ -9,13 +9,12 @@ import TextInput from './FormikTextInput';
 
 const styles = StyleSheet.create({
   login: {
-    paddingTop: 30,
+    margin: 10,
   },
   button: {
     padding: 10,
-    paddingLeft: 20,
-    margin: 10,
-    marginBottom: 3,
+    marginTop: 5,
+    marginBottom: 5,
     backgroundColor: theme.colors.primary,
     borderColor: 'black',
     borderRadius: 7,
