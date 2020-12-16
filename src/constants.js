@@ -4,7 +4,7 @@ const prod = {
 
 const dev = {
   apiBaseUrl: 'http://192.168.8.224:5000/api',
-  // apiBaseUrl: 'rate-repository-app.local:5000/api',
+  graphqlUrl: 'http://192.168.8.224:5000/graphql',
 };
 
 const config = process.env.NODE_ENV === 'development' ? dev : prod;
