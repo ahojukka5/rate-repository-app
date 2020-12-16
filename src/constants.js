@@ -3,7 +3,7 @@ const prod = {
 };
 
 const dev = {
-  apiBaseUrl: 'http://192.168.8.224:5000/graphql',
+  apiBaseUrl: 'http://192.168.8.224:5000/api',
   // apiBaseUrl: 'rate-repository-app.local:5000/api',
 };
 
