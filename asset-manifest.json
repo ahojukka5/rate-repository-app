@@ -4,19 +4,19 @@
     "app.js.map": "/rate-repository-app/static/js/app.d4b88a11.chunk.js.map",
     "runtime~app.js": "/rate-repository-app/static/js/runtime~app.449fedf4.js",
     "runtime~app.js.map": "/rate-repository-app/static/js/runtime~app.449fedf4.js.map",
-    "static/js/2.c4dc39ce.chunk.js": "/rate-repository-app/static/js/2.c4dc39ce.chunk.js",
-    "static/js/2.c4dc39ce.chunk.js.map": "/rate-repository-app/static/js/2.c4dc39ce.chunk.js.map",
+    "static/js/2.c9dc522c.chunk.js": "/rate-repository-app/static/js/2.c9dc522c.chunk.js",
+    "static/js/2.c9dc522c.chunk.js.map": "/rate-repository-app/static/js/2.c9dc522c.chunk.js.map",
     "favicon-16.png": "/rate-repository-app/favicon-16.png",
     "favicon-32.png": "/rate-repository-app/favicon-32.png",
     "favicon.ico": "/rate-repository-app/favicon.ico",
     "index.html": "/rate-repository-app/index.html",
     "manifest.json": "/rate-repository-app/manifest.json",
     "serve.json": "/rate-repository-app/serve.json",
-    "static/js/2.c4dc39ce.chunk.js.LICENSE.txt": "/rate-repository-app/static/js/2.c4dc39ce.chunk.js.LICENSE.txt"
+    "static/js/2.c9dc522c.chunk.js.LICENSE.txt": "/rate-repository-app/static/js/2.c9dc522c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime~app.449fedf4.js",
-    "static/js/2.c4dc39ce.chunk.js",
+    "static/js/2.c9dc522c.chunk.js",
     "static/js/app.d4b88a11.chunk.js"
   ]
 }
