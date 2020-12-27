@@ -1,0 +1,1 @@
+"serviceWorker"in navigator&&window.addEventListener("load",(function(){navigator.serviceWorker.register("/rate-repository-app/expo-service-worker.js",{scope:"/rate-repository-app/"}).then((function(e){})).catch((function(e){console.info("Failed to register service-worker",e)}))}));
