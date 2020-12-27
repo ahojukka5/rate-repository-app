@@ -21,7 +21,7 @@ jobs:
       env:
         ENV: production
         APOLLO_URI: ${{ secrets.APOLLO_URI }}
-      run: npm build
+      run: npm run build:web
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
       with:
