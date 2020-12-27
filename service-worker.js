@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rate-repository-app/precache-manifest.b87f00be081e26f2306d2d7b06c26f29.js"
+  "/rate-repository-app/precache-manifest.1ac39e6a8d88d900cd9c2e2beaa85465.js"
 );
 
 workbox.skipWaiting();

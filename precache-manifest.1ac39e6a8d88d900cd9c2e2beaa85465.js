@@ -8,11 +8,11 @@ self.__precacheManifest = [
     "url": "/rate-repository-app/static/js/runtime~app.449fedf4.js"
   },
   {
-    "revision": "8b198dff2379390bd28f",
-    "url": "/rate-repository-app/static/js/2.6ee1234c.chunk.js"
+    "revision": "d170f9ba96b960abaa65",
+    "url": "/rate-repository-app/static/js/2.f4b57d33.chunk.js"
   },
   {
-    "revision": "3ef44f7884552b13f069e5e6a4898515",
+    "revision": "1ddc172b4eef03fe68df4a706dc0867e",
     "url": "/rate-repository-app/index.html"
   },
   {
@@ -29,7 +29,7 @@ self.__precacheManifest = [
   },
   {
     "revision": "3d71af97b6e208e4e680123e701e5c8c",
-    "url": "/rate-repository-app/static/js/2.6ee1234c.chunk.js.LICENSE.txt"
+    "url": "/rate-repository-app/static/js/2.f4b57d33.chunk.js.LICENSE.txt"
   },
   {
     "revision": "d324ddc823eca6c86688f62576c81e76",
